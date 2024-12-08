@@ -1,4 +1,27 @@
 <resources>
     <string name="app_name">P.A.Y.B</string>
     <string name="app_text">Hello, Android!</string>
+    <string name="hotlines">Emergency Hotlines</string>
+    <string name="locator">Emergency Locator</string>
+    
+	<string name="doh_hotline">Department of Health</string>
+	<string name="pnp_hotline">Philippine National Police</string>
+	<string name="pagasa_hotline">Philippine Atmospheric, Geophysical and Astronomical Services Administration</string>
+	<string name="ndrrmc_hotline">National Disaster Risk Reduction and Management Council</string>
+	<string name="dpwh_hotline">Department of Public Works and Highways </string>
+	<string name="peh_hotline">Philippine Emergency Hotline </string>
+	<string name="prc_hotline">Philippine Red Cross</string>
+	<string name="mmda_hotline">Metropolitan Manila Development Authority </string>
+	<string name="bfp_hotline">Bureau of Fire Protection</string>
+
+	<string name="doh_hotline_number">360-236-4700</string>
+	<string name="pnp_hotline_number">117</string>
+	<string name="pagasa_hotline_number">(02) 8927-1335</string>
+	<string name="ndrrmc_hotline_number">(02) 911-1406</string>
+	<string name="dpwh_hotline_number">(02) 304-3713</string>
+	<string name="peh_hotline_number">117</string>
+	<string name="prc_hotline_number">(02) 527-0000</string>
+	<string name="mmda_hotline_number">136</string>
+	<string name="bfp_hotline_number">(02) 8426-0219</string>
+
 </resources>

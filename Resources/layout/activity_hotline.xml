@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:gravity="center">
+
+    <!-- New content for the new layout -->
+	<Button
+        android:id="@+id/DOHButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/doh_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+	
+	<Button
+        android:id="@+id/PNPButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pnp_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+	
+	<Button
+        android:id="@+id/PEHButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/peh_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+	
+	<Button
+        android:id="@+id/PRCButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prc_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+	<Button
+	android:id="@+id/BFPButton"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="@string/bfp_hotline"
+	android:drawablePadding="15dp"
+	android:textSize="18sp"
+	android:layout_marginTop="8dp"/>
+
+	<Button
+        android:id="@+id/DPWHButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dpwh_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+	<Button
+        android:id="@+id/MMDAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mmda_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+
+	<Button
+        android:id="@+id/PAGASAButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pagasa_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+    
+	<Button
+        android:id="@+id/NDRRMCButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ndrrmc_hotline"
+		android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"/>
+	
+</LinearLayout>
