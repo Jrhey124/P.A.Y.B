@@ -144,6 +144,31 @@ namespace P.A.Y.B
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_aboutus);
+
+            // Find the TextView for the About Us Description
+            var descriptionTextView = FindViewById<TextView>(Resource.Id.aboutUsDescription);
+
+            // Read the content of the about_us.txt file from the Assets folder
+            string aboutUsText = GetString(Resource.String.about_us_description);
+
+            // Set the text to the About Us TextView
+            descriptionTextView.Text = aboutUsText;
+
+            // Optionally, set up the back button
+            var backButton = FindViewById<Button>(Resource.Id.backButton);
+            backButton.Click += (sender, e) =>
+            {
+                Finish(); // Close the activity and return to the previous screen
+            };
+        }
+
+        // Method to read the text file from the Assets folder
+        private string ReadAssetFile(string filename)
+        {
+            using (var reader = new StreamReader(Assets.Open(filename)))
+            {
+                return reader.ReadToEnd();
+            }
         }
     }
 }

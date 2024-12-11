@@ -1,0 +1,14 @@
+﻿<resources>
+	
+	<!-- About Us content -->
+	<string name="about_us_title">About Us</string>
+	<string name="about_us_description">
+		We are second-year students from the Technological Institute of the Philippines (TIP), currently enrolled in the Entrepreneurial Mind course. Our passion for innovation and technology drove us to develop P.A.Y.B – An Emergency Application, a solution designed to address real-world problems in emergency response and communication.
+
+		As aspiring developers and future entrepreneurs, our goal is to create tools that make a meaningful impact on peoples lives. Recognizing the challenges individuals face during emergencies – such as limited network connectivity, lack of awareness of emergency hotlines, and delays in response times – we envisioned an application that connects consumers and first responders seamlessly. By combining technology, real-time location sharing, and user-friendly interfaces, our project aims to improve safety, efficiency, and communication during critical situations.
+
+		Our team is dedicated to continuous learning and improvement. Through research, surveys, and feedback, we strive to enhance the functionality of P.A.Y.B, ensuring it meets the needs of users in both urban and rural settings. With this project, we hope to showcase our capabilities as innovative problem solvers while contributing to the betterment of society.
+
+		Thank you for supporting our vision and being part of this journey toward creating a safer and more connected world.
+	</string>
+</resources>
