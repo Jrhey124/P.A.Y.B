@@ -6,6 +6,7 @@ using Android.Net;
 using Android.Widget;
 using Android.App;
 using Xamarin.Essentials;
+using Android.Webkit;
 
 namespace P.A.Y.B
 {
@@ -23,6 +24,7 @@ namespace P.A.Y.B
             Button HotlineButton = FindViewById<Button>(Resource.Id.HotlineButton);
             // Set the click listener for the hotline button
             HotlineButton.Click += (sender, e) => StartActivity(typeof(HotlineActivity));
+
 
             Button LocatorButton = FindViewById<Button>(Resource.Id.LocatorButton);
             // Set the click listener for the locator button
@@ -83,6 +85,8 @@ namespace P.A.Y.B
     [Activity(Label = "Locator")]
     public class LocatorActivity : Activity
     {
+
+        /*
         protected override async void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -92,7 +96,37 @@ namespace P.A.Y.B
 
             //string locate = await GetLocation();
             Toast.MakeText(this, $"Latitude: {location.Latitude}, Longitude: {location.Longitude}", ToastLength.Short).Show();
+        }*/
+        private WebView _webView;
+
+        protected override async void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.activity_locator);
+
+            var location = await Geolocation.GetLastKnownLocationAsync();
+
+            //string locate = await GetLocation();
+            Toast.MakeText(this, $"Latitude: {location.Latitude}, Longitude: {location.Longitude}", ToastLength.Short).Show();
+
+            _webView = FindViewById<WebView>(Resource.Id.webView);
+
+            // Enable JavaScript in WebView
+            _webView.Settings.JavaScriptEnabled = true;
+
+            // Enable wide viewport and set zoom controls
+            _webView.Settings.SetSupportZoom(true);
+
+            _webView.Settings.BuiltInZoomControls = true;
+            _webView.Settings.DisplayZoomControls = false;
+
+            // Load the OpenStreetMap URL
+            _webView.LoadUrl($"https://www.openstreetmap.org/?mlat={location.Latitude}&mlon={location.Longitude}");
+
+            // Optionally handle back press for WebView navigation
+            _webView.SetWebViewClient(new WebViewClient());
         }
+        // Find WebView
 
         /*
         public static async Task<string> GetLocation()

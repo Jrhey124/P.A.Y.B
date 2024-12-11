@@ -1,5 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+	
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
@@ -13,80 +17,109 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/doh_hotline"
+		android:drawableLeft="@drawable/doh"
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 	
 	<Button
         android:id="@+id/PNPButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pnp_hotline"
+		android:drawableLeft="@drawable/pnp"
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 	
 	<Button
         android:id="@+id/PEHButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/peh_hotline"
+		android:drawableLeft="@drawable/peh"
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 	
 	<Button
         android:id="@+id/PRCButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/prc_hotline"
+		android:drawableLeft="@drawable/prc"
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 
 	<Button
 	android:id="@+id/BFPButton"
 	android:layout_width="wrap_content"
 	android:layout_height="wrap_content"
 	android:text="@string/bfp_hotline"
+	android:drawableLeft="@drawable/bfp"
 	android:drawablePadding="15dp"
 	android:textSize="18sp"
-	android:layout_marginTop="8dp"/>
+    android:layout_marginTop="8dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"/>
 
 	<Button
         android:id="@+id/DPWHButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/dpwh_hotline"
+		android:drawableLeft="@drawable/dpwh"
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 
 	<Button
         android:id="@+id/MMDAButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/mmda_hotline"
+		android:drawableLeft="@drawable/mmda"
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 
 	<Button
         android:id="@+id/PAGASAButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/pagasa_hotline"
+		android:drawableLeft="@drawable/pagasa"
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
     
 	<Button
         android:id="@+id/NDRRMCButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/ndrrmc_hotline"
+		android:drawableLeft="@drawable/ndrrmc" 
 		android:drawablePadding="15dp"
         android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="8dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"/>
 	
 </LinearLayout>
+	
+</ScrollView>
