@@ -45,5 +45,15 @@
 		android:drawableLeft="@drawable/aboutus"
 		android:drawablePadding="10dp"
 		android:textSize="32sp"
-		android:layout_marginTop="8dp"/>
+		android:layout_marginTop="8dp"
+		android:layout_marginBottom="32dp"/>
+
+	<ImageButton
+    android:id="@+id/SOSButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/sos"
+	android:contentDescription="SOS"
+	android:background="?android:attr/selectableItemBackground" 
+	android:layout_gravity="center" />
 </LinearLayout>

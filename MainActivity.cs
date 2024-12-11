@@ -7,12 +7,14 @@ using Android.Widget;
 using Android.App;
 using Xamarin.Essentials;
 using Android.Webkit;
+using Android.Media;
 
 namespace P.A.Y.B
 {
     [Activity(Label = "@string/app_name", MainLauncher = true)]
     public class MainActivity : Activity
     {
+        private MediaPlayer mediaPlayer;
         protected override void OnCreate(Bundle? savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
@@ -37,7 +39,48 @@ namespace P.A.Y.B
             Button AboutusButton = FindViewById<Button>(Resource.Id.AboutusButton);
             // Set the click listener for the locator button
             AboutusButton.Click += (sender, e) => StartActivity(typeof(AboutUsActivity));
+
+
+
+            var sirenButton = FindViewById<ImageButton>(Resource.Id.SOSButton);
+            mediaPlayer = MediaPlayer.Create(this, Resource.Raw.siren);
+            bool isPlaying = false;
+            sirenButton.Click += (sender, e) =>
+            {
+                if (isPlaying)
+                {
+                    // If the sound is playing, stop it and release resources
+                    mediaPlayer?.Stop();
+                    mediaPlayer?.Release();
+                    mediaPlayer = null;
+                    isPlaying = false;  // Set the flag to false
+                }
+                else
+                {
+                    // If the sound is not playing, start it and set to loop
+                    mediaPlayer = MediaPlayer.Create(this, Resource.Raw.siren);  // Use the sound file from Resources/raw
+                    mediaPlayer.Looping = true;  // Set the MediaPlayer to loop the sound
+                    mediaPlayer.Start();
+                    isPlaying = true;  // Set the flag to true
+                }
+            };
         }
+        protected override void OnPause()
+        {
+            base.OnPause();
+            // Release the MediaPlayer when the activity is paused
+            mediaPlayer?.Release();
+            mediaPlayer = null;
+        }
+
+        protected override void OnStop()
+        {
+            base.OnStop();
+            // Release the MediaPlayer when the activity is stopped
+            mediaPlayer?.Release();
+            mediaPlayer = null;
+        }
+
     }
 
     [Activity(Label = "Emergency Hotline")]
