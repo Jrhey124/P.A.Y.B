@@ -3,7 +3,9 @@
     <string name="app_text">Hello, Android!</string>
     <string name="hotlines">Emergency Hotlines</string>
     <string name="locator">Emergency Locator</string>
-    
+	<string name="pricing">Pricing/Plan</string>
+	<string name="aboutus">About Us</string>
+	
 	<string name="doh_hotline">Department of Health</string>
 	<string name="pnp_hotline">Philippine National Police</string>
 	<string name="pagasa_hotline">Philippine Atmospheric, Geophysical and Astronomical Services Administration</string>

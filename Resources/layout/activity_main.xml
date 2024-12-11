@@ -22,8 +22,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/locator"
-        android:drawableLeft="@drawable/map1" 
+        android:drawableLeft="@drawable/map" 
 		android:drawablePadding="15dp"
         android:textSize="32sp"
         android:layout_marginTop="8dp"/>
+
+	<Button
+		android:id="@+id/PricingButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/pricing"
+		android:drawableLeft="@drawable/pricing"
+		android:drawablePadding="15dp"
+		android:textSize="32sp"
+		android:layout_marginTop="8dp"/>
+
+	<Button
+		android:id="@+id/AboutusButton"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="@string/aboutus"
+		android:drawableLeft="@drawable/aboutus"
+		android:drawablePadding="15dp"
+		android:textSize="32sp"
+		android:layout_marginTop="8dp"/>
 </LinearLayout>

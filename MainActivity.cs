@@ -29,6 +29,14 @@ namespace P.A.Y.B
             Button LocatorButton = FindViewById<Button>(Resource.Id.LocatorButton);
             // Set the click listener for the locator button
             LocatorButton.Click += (sender, e) => StartActivity(typeof(LocatorActivity));
+
+            Button PricingButton = FindViewById<Button>(Resource.Id.PricingButton);
+            // Set the click listener for the locator button
+            PricingButton.Click += (sender, e) => StartActivity(typeof(PricingActivity));
+
+            Button AboutusButton = FindViewById<Button>(Resource.Id.AboutusButton);
+            // Set the click listener for the locator button
+            AboutusButton.Click += (sender, e) => StartActivity(typeof(AboutUsActivity));
         }
     }
 
@@ -85,18 +93,6 @@ namespace P.A.Y.B
     [Activity(Label = "Locator")]
     public class LocatorActivity : Activity
     {
-
-        /*
-        protected override async void OnCreate(Bundle savedInstanceState)
-        {
-            base.OnCreate(savedInstanceState);
-            SetContentView(Resource.Layout.activity_locator); // Set your new layout
-
-            var location = await Geolocation.GetLastKnownLocationAsync();
-
-            //string locate = await GetLocation();
-            Toast.MakeText(this, $"Latitude: {location.Latitude}, Longitude: {location.Longitude}", ToastLength.Short).Show();
-        }*/
         private WebView _webView;
 
         protected override async void OnCreate(Bundle savedInstanceState)
@@ -126,15 +122,28 @@ namespace P.A.Y.B
             // Optionally handle back press for WebView navigation
             _webView.SetWebViewClient(new WebViewClient());
         }
-        // Find WebView
+    }
 
-        /*
-        public static async Task<string> GetLocation()
+    [Activity(Label = "Pricing")] // Activity label for this screen
+    public class PricingActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
         {
-            var location = await Geolocation.GetLastKnownLocationAsync();
-            if (location != null)
-                return $"Latitude: {location.Latitude}, Longitude: {location.Longitude}";
-            return "Location not available.";
-        }*/
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.activity_pricing); // Set the layout for this activity
+
+            // You can add any code for pricing-related functionality here
+            // For example, displaying a pricing list, or interacting with a pricing API.
+        }
+    }
+
+    [Activity(Label = "About Us")]
+    public class AboutUsActivity : Activity
+    {
+        protected override void OnCreate(Bundle savedInstanceState)
+        {
+            base.OnCreate(savedInstanceState);
+            SetContentView(Resource.Layout.activity_aboutus);
+        }
     }
 }

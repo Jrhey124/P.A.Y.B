@@ -10,6 +10,11 @@
 
 		<activity android:name=".LocatorActivity"
 		  android:label="New Layout" />
+
+		<activity android:name=".PricingActivity"
+			android:label="New Layout" />
+		<activity android:name=".AboutusActivity"
+			android:label="New Layout" />
 		
 	</application>
 	<uses-permission android:name="android.permission.INTERNET" />

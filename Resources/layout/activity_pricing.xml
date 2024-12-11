@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+			  android:layout_width="match_parent" android:layout_height="match_parent" android:padding="16dp">
+	
+	<TextView android:id="@+id/pricing_title" android:text="Pricing Plans" android:textSize="24sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center"/>
+	<Button android:id="@+id/basic_plan" android:text="Basic Plan: P99/month" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+	<Button android:id="@+id/deluxe_plan" android:text="Deluxe Plan: P149/month" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+	<Button android:id="@+id/super_basic_plan" android:text="Yearly Basic Plan: P999/month" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+	<Button android:id="@+id/super_deluxe_plan" android:text="Yearly Deluxe Plan: 1299/month" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+	<TextView android:id="@+id/enterprise_plan" android:text="Enterprise Plan: Contact Us" android:textSize="18sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+</LinearLayout>
